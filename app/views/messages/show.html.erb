@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Recieved:</strong>
+  <%= @message.recieved %>
+</p>
+
+<p>
+  <strong>Reply:</strong>
+  <%= @message.reply %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
